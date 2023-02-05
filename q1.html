@@ -1,0 +1,57 @@
+<!-- onclick,onmouseover,onload -->
+<html>
+    <head>
+        <title>Questin 1</title>
+    </head>
+    <body>
+        <img src="smiley.png" id="smile" height="300" width="300" ><br>
+        <img src="nrilogo.png" onload="loadimage()">
+        <br>
+        <marquee behavior="alternate" direction="left">
+            <label>When u click on the above emoji it reacts an expression</label><br>
+            <label>When u move on the above emoji it reacts an expression</label>
+        </marquee>
+        <label id="l1"></label>
+        <hr>
+    </body>
+<script>
+let countclick=0;
+let countover=0;
+document.getElementById("smile").onclick =function(){
+    if(countclick%2==0){
+        document.getElementById('smile').src="pain.png";
+    }
+    else{
+        document.getElementById("smile").src="smiley.png";
+    }
+    countclick+=1;
+}
+document.getElementById("smile").onmouseover =function(){
+    if(countover%2==0){
+        document.getElementById('smile').src="eyesup.png";
+    }
+    else{
+        document.getElementById("smile").src="smiley.png";
+    }
+    countover+=1;
+}
+function loadimage(){
+    alert("The image is loaded");
+}
+</script>
+<style>
+    body{
+        background-image: linear-gradient(#3D1766,#03001C);
+        font-family:'Times New Roman', Times, serif;
+        font-size: 28px;
+        color: red;
+    }
+    hr{
+        border-style: dotted;
+        border-width: 6px;
+        border-bottom: none;
+        width: 6%;
+        color: ghostwhite;
+    }
+</style>
+</html>

@@ -1,0 +1,44 @@
+body{
+    background-image: linear-gradient(#3D1766,#03001C);
+    font-family:'Times New Roman', Times, serif;
+    font-size: 28px;
+    color: red;
+}
+hr{
+    border-style: dotted;
+    border-width: 6px;
+    border-bottom: none;
+    width: 2%;
+    color: lightblue;
+}
+/* this is just for decoration you can skip for exam*/
+.submit{
+    background: #34d9bb;
+    background-image: -webkit-linear-gradient(top, #34d9bb, #65c431);
+    background-image: -moz-linear-gradient(top, #34d9bb, #65c431);
+    background-image: -ms-linear-gradient(top, #34d9bb, #65c431);
+    background-image: -o-linear-gradient(top, #34d9bb, #65c431);
+    background-image: linear-gradient(to bottom, #34d9bb, #65c431);
+    -webkit-border-radius: 14;
+    -moz-border-radius: 14;
+    border-radius: 14px;
+    font-family: Courier New;
+    color: #e82559;
+    font-size: 16px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    position: relative;
+    margin-top: 20px;
+    margin-left: 680px;
+    margin-bottom:20px;
+    }
+    
+    .submit:hover {
+    background: #bd27e6;
+    background-image: -webkit-linear-gradient(top, #bd27e6, #3685ba);
+    background-image: -moz-linear-gradient(top, #bd27e6, #3685ba);
+    background-image: -ms-linear-gradient(top, #bd27e6, #3685ba);
+    background-image: -o-linear-gradient(top, #bd27e6, #3685ba);
+    background-image: linear-gradient(to bottom, #bd27e6, #3685ba);
+    text-decoration: none;
+    }
